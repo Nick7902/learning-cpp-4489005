@@ -8,7 +8,8 @@ using namespace std;
 
 int main(){
     string str;
-    cout << "Enter your name: ";
+    // Flush is used to ensure the printing is complete before asking for input
+    cout << "Enter your name: " << flush;
     cin >> str;
     cout << "Hi " << str << "!";
 
