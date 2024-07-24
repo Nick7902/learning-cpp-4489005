@@ -4,9 +4,10 @@
 
 #include <iostream>
 #include <cstdint>
+using namespace std;
 
 int main(){
     
-    std::cout << std::endl << std::endl;
+    cout << endl << endl;
     return (0);
 }
