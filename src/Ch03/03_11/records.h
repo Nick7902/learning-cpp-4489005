@@ -1,28 +1,30 @@
-#pragma once
+#ifndef COW_H
+#define COW_H
 
 #include <string>
+using namespace std;
 
 class Student{
 private:
     int id;
-    std::string name;
+    string name;
 
 public:
-    Student(int the_id, std::string the_name);
+    Student(int the_id, string the_name);
     int get_id() const;
-    std::string get_name() const;
+    string get_name() const;
 };
 
 class Course{
 private:
     int id;
-    std::string name;
+    string name;
     unsigned char credits;
 
 public:
-    Course(int the_id, std::string the_name, unsigned char the_credits);
+    Course(int the_id, string the_name, unsigned char the_credits);
     int get_id() const;
-    std::string get_name() const;
+    string get_name() const;
     int get_credits() const;
 };
 
@@ -38,3 +40,5 @@ public:
     int get_course_id() const;
     char get_grade() const;
 };
+
+#endif
