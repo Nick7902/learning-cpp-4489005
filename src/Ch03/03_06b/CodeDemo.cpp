@@ -4,9 +4,17 @@
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 int main(){
+    int a = 37;
+    cout << "The value of a is: " << a << endl;
 
-    std::cout << std::endl << std::endl;
+    int *ptr = &a;
+    *ptr = 50;
+
+    cout << "The value of a is: " << a << endl;
+
+    cout << endl << endl;
     return (0);
 }
