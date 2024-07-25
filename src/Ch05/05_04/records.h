@@ -2,28 +2,29 @@
 
 #include <vector>
 #include <string>
+using namespace std;
 
 class Student{
 private:
     int id;
-    std::string name;
+    string name;
 
 public:
-    Student(int the_id, std::string the_name);
+    Student(int the_id, string the_name);
     int get_id() const;
-    std::string get_name() const;
+    string get_name() const;
 };
 
 class Course{
 private:
     int id;
-    std::string name;
+    string name;
     unsigned char credits;
 
 public:
-    Course(int the_id, std::string the_name, unsigned char the_credits);
+    Course(int the_id, string the_name, unsigned char the_credits);
     int get_id() const;
-    std::string get_name() const;
+    string get_name() const;
     int get_credits() const;
 };
 
@@ -42,18 +43,19 @@ public:
 
 class StudentRecords{
 private:
-    std::vector<Student> students;
-    std::vector<Course> courses;
-    std::vector<Grade> grades;
+    vector<Student> students;
+    vector<Course> courses;
+    vector<Grade> grades;
 
     float get_num_grade(char) const;
     
 public:
-    void add_student(int, std::string);
-    void add_course(int, std::string, unsigned char);
+    void add_student(int, string);
+    void add_course(int, string, unsigned char);
     void add_grade(int, int, char);
 
-    std::string get_student_name(int) const;
+    string get_student_name(int) const;
     unsigned char get_course_credits(int) const;
     float get_GPA(int) const;
+    void report_card(int) const;
 };

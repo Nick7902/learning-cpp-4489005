@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "records.h"
+using namespace std;
 
 void initialize(StudentRecords&);
 
@@ -14,12 +15,12 @@ int main(){
     
     initialize(SR);
 
-    std::cout << "Enter a student ID: " << std::flush;
-    std::cin >> id;
+    cout << "Enter a student ID: " << flush;
+    cin >> id;
 
     SR.report_card(id);
     
-    std::cout << std::endl << std::endl;
+    cout << endl << endl;
     return (0);
 }
 
